@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .btn { @apply inline-flex items-center gap-2 rounded-full px-6 py-3 font-semibold transition hover:-translate-y-0.5; }
+  .card { @apply rounded-3xl bg-white p-6 shadow-[0_6px_24px_-12px_rgba(241,113,5,.35)] transition hover:-translate-y-1; }
+  .tag { @apply inline-block rounded-full bg-cream px-3 py-1 text-xs font-medium text-brand; }
+  .h2 { @apply text-3xl font-bold sm:text-4xl; }
+}
+html { scroll-behavior: smooth; }
+
+/* Animations */
+@keyframes fade-up { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: none; } }
+@keyframes float { 0%, 100% { transform: translateY(0) rotate(2deg); } 50% { transform: translateY(-12px) rotate(-1deg); } }
+@keyframes blob { 0%, 100% { transform: scale(1) translate(0, 0); } 50% { transform: scale(1.12) translate(-20px, 16px); } }
+@keyframes wiggle { 0%, 100% { transform: rotate(0); } 25% { transform: rotate(-12deg); } 75% { transform: rotate(12deg); } }
+@keyframes bob { 0%, 100% { transform: translateY(0) rotate(-3deg); } 50% { transform: translateY(-6px) rotate(-3deg); } }
+@keyframes zoom-in { from { opacity: 0; transform: scale(.92); } to { opacity: 1; transform: none; } }
+
+.anim-hero > * { opacity: 0; animation: fade-up .8s cubic-bezier(.2,.7,.2,1) forwards; }
+.anim-hero > :nth-child(2) { animation-delay: .15s; }
+.anim-hero > :nth-child(3) { animation-delay: .3s; }
+.anim-hero > :nth-child(4) { animation-delay: .45s; }
+.anim-float { animation: float 6s ease-in-out infinite; }
+.anim-blob { animation: blob 10s ease-in-out infinite; }
+.anim-bob { animation: bob 3s ease-in-out infinite; }
+.card:hover .emoji { animation: wiggle .5s ease-in-out; }
+.emoji { display: inline-block; }
+#lightbox.flex img { animation: zoom-in .25s ease-out; }
+
+.reveal { opacity: 0; transform: translateY(28px); transition: opacity .7s ease, transform .7s cubic-bezier(.2,.7,.2,1); }
+.reveal.in { opacity: 1; transform: none; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+  .reveal, .anim-hero > * { opacity: 1 !important; transform: none !important; }
+}
+
+.no-scrollbar { scrollbar-width: none; }
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.logo-deyga { font-family: Georgia, 'Times New Roman', serif; letter-spacing: .04em; }

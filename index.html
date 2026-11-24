@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>The Pause Kommune — It's OK to stop here</title>
+  <meta name="description" content="The Pause Kommune is a Coimbatore community for mental wellness, creativity and human connection." />
+  <meta name="theme-color" content="#F17105" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="bg-white font-sans text-ink antialiased">
+
+  <!-- Nav -->
+  <header class="sticky top-0 z-40 border-b border-cream bg-white/90 backdrop-blur">
+    <nav class="mx-auto flex max-w-6xl items-center justify-between px-4 py-3">
+      <a href="#top" class="text-lg font-bold">the pause <span class="text-brand">kommune</span></a>
+      <button id="menuBtn" class="rounded-full p-2 md:hidden" aria-label="Open menu" aria-expanded="false">
+        <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+      <ul id="menu" class="absolute left-0 right-0 top-full hidden flex-col gap-1 border-b border-cream bg-white px-4 pb-4 text-sm font-medium md:static md:flex md:flex-row md:gap-6 md:border-0 md:p-0">
+        <li><a class="block py-2 hover:text-brand" href="#about">About</a></li>
+        <li><a class="block py-2 hover:text-brand" href="#founder">Founder</a></li>
+        <li><a class="block py-2 hover:text-brand" href="#events">Events</a></li>
+        <li><a class="block py-2 hover:text-brand" href="#featured">Featured</a></li>
+        <li><a class="block py-2 hover:text-brand" href="#gallery">Gallery</a></li>
+        <li><a class="btn mt-2 bg-brand px-5 py-2 text-white md:mt-0" href="#contact">Join a pause</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="top">
+    <!-- Hero -->
+    <section class="relative overflow-hidden">
+      <div class="anim-blob absolute -right-24 -top-24 h-72 w-72 rounded-full bg-cream sm:h-96 sm:w-96"></div>
+      <div class="relative mx-auto grid max-w-6xl items-center gap-10 px-4 py-14 md:grid-cols-2 md:py-24">
+        <div class="anim-hero">
+          <p class="font-hand text-2xl text-brand sm:text-3xl">it's ok to stop here.</p>
+          <h1 class="mt-2 text-4xl font-bold leading-tight sm:text-6xl">Take a breath.<br />Find your <span class="text-brand">people.</span></h1>
+          <p class="mt-5 max-w-md text-base text-ink/70 sm:text-lg">The Pause Kommune is a feelings-first community in Coimbatore for mental wellness, creativity and real human connection.</p>
+          <div class="mt-8 flex flex-wrap gap-3">
+            <a href="#events" class="btn bg-brand text-white">See our pauses →</a>
+            <a href="#contact" class="btn bg-cream text-brand">Host one with us</a>
+          </div>
+        </div>
+        <div class="relative mx-auto w-full max-w-sm">
+          <img src="images/founder.webp" alt="Indhuja at The Pause Kommune welcome board" class="anim-float aspect-[4/5] w-full rounded-[2rem] object-cover object-top shadow-xl" fetchpriority="high" />
+          <div class="anim-bob absolute -bottom-5 -left-3 rounded-2xl bg-white px-4 py-3 shadow-lg sm:-left-8">
+            <p class="text-2xl font-bold text-brand">11+</p>
+            <p class="text-xs text-ink/60">pauses hosted in 2026</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="scroll-mt-16 bg-cream/60">
+      <div class="mx-auto max-w-6xl px-4 py-16 md:py-20">
+        <span class="tag bg-white">about us</span>
+        <h2 class="h2 mt-3 max-w-2xl">A space where feeling is not weakness.</h2>
+        <p class="mt-4 max-w-2xl text-ink/70">We create small, warm gatherings where people slow down, express what they feel and connect without filters, through games, art, movement, music and honest conversation. Students, young professionals and founders all come here to pause.</p>
+        <div class="mt-10 grid gap-4 sm:grid-cols-3">
+          <div class="card"><p class="text-3xl"><span class="emoji">🧘</span></p><h3 class="mt-3 font-semibold">Mental wellness</h3><p class="mt-1 text-sm text-ink/70">Reflection, breathwork and stress tools you can use the very next day.</p></div>
+          <div class="card"><p class="text-3xl"><span class="emoji">🎨</span></p><h3 class="mt-3 font-semibold">Creativity</h3><p class="mt-1 text-sm text-ink/70">Art, dance and playful activities to let your mind breathe.</p></div>
+          <div class="card"><p class="text-3xl"><span class="emoji">🤝</span></p><h3 class="mt-3 font-semibold">Human connection</h3><p class="mt-1 text-sm text-ink/70">Strangers walk in, friends walk out. That's the whole idea.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats -->
+    <section class="mx-auto grid max-w-6xl grid-cols-2 gap-4 px-4 py-14 md:grid-cols-4">
+      <div class="text-center"><p class="text-4xl font-bold text-brand" data-count="11" data-suffix="+">11+</p><p class="text-sm text-ink/60">events &amp; sessions</p></div>
+      <div class="text-center"><p class="text-4xl font-bold text-brand" data-count="45" data-suffix="">45</p><p class="text-sm text-ink/60">at our biggest workshop</p></div>
+      <div class="text-center"><p class="text-4xl font-bold text-brand" data-count="5" data-suffix="">5</p><p class="text-sm text-ink/60">colleges &amp; schools reached</p></div>
+      <div class="text-center"><p class="text-4xl font-bold text-brand" data-count="1" data-suffix="">1</p><p class="text-sm text-ink/60">rule: it's ok to stop</p></div>
+    </section>
+
+    <!-- Founder -->
+    <section id="founder" class="scroll-mt-16 mx-auto max-w-6xl px-4 pb-16 md:pb-20">
+      <div class="grid items-center gap-8 rounded-[2rem] bg-cream p-6 sm:p-10 md:grid-cols-[280px_1fr]">
+        <img src="images/p04.webp" alt="Indhuja Gunasekaran" loading="lazy" class="mx-auto aspect-[3/4] w-56 rounded-3xl object-cover md:w-full" />
+        <div>
+          <span class="tag bg-white">meet the founder</span>
+          <h2 class="h2 mt-3">Indhuja Gunasekaran</h2>
+          <p class="mt-1 font-medium text-brand">Founder &amp; CEO, The Pause Kommune</p>
+          <p class="mt-4 text-ink/70">A community builder, creative strategist, event curator and host who loves creating experiences that leave people feeling lighter and more connected.</p>
+          <ul class="mt-5 flex flex-wrap gap-2 text-sm">
+            <li class="rounded-full bg-white px-3 py-1">Executive Director, Fempire Rising</li>
+            <li class="rounded-full bg-white px-3 py-1">Board Member &amp; Resource Person, CSW Foundation</li>
+            <li class="rounded-full bg-white px-3 py-1">Co-Founder, Talkstar Social</li>
+            <li class="rounded-full bg-white px-3 py-1">CEO, Vibe Makers Holidays</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Events -->
+    <section id="events" class="scroll-mt-16 bg-cream/60">
+      <div class="mx-auto max-w-6xl px-4 py-16 md:py-20">
+        <span class="tag bg-white">community pauses</span>
+        <div class="flex items-end justify-between gap-4">
+          <h2 class="h2 mt-3">Every pause is a little different.</h2>
+          <div class="hidden shrink-0 gap-2 sm:flex">
+            <button data-scroll="-1" class="h-11 w-11 rounded-full bg-white text-brand shadow transition hover:bg-brand hover:text-white" aria-label="Previous">←</button>
+            <button data-scroll="1" class="h-11 w-11 rounded-full bg-white text-brand shadow transition hover:bg-brand hover:text-white" aria-label="Next">→</button>
+          </div>
+        </div>
+        <p class="mt-2 text-sm text-ink/50 sm:hidden">swipe to see more →</p>
+        <div id="eventList" class="no-scrollbar -mx-4 mt-8 flex snap-x snap-mandatory gap-5 overflow-x-auto scroll-px-4 px-4 pb-6"></div>
+      </div>
+    </section>
+
+    <!-- Featured collab -->
+    <section id="featured" class="scroll-mt-16 relative overflow-hidden bg-gradient-to-b from-white to-cream/70">
+      <div class="anim-blob absolute -left-20 top-10 h-64 w-64 rounded-full bg-cream"></div>
+      <div class="relative mx-auto max-w-6xl px-4 py-16 md:py-24">
+        <div class="text-center">
+          <span class="inline-flex items-center gap-2 rounded-full bg-brand px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-white">✦ Featured</span>
+          <div class="mt-6 flex items-center justify-center gap-3 sm:gap-5">
+            <span class="logo-deyga rounded-2xl bg-white px-5 py-3 text-2xl text-ink shadow-md sm:text-3xl">Deyga</span>
+            <span class="text-3xl font-bold text-brand">×</span>
+            <span class="rounded-2xl bg-white px-5 py-3 text-base font-bold leading-tight shadow-md sm:text-lg">the pause<br /><span class="text-brand">kommune</span></span>
+          </div>
+          <h2 class="h2 mx-auto mt-8 max-w-xl">A pause, made with Deyga.</h2>
+          <p class="mx-auto mt-3 max-w-xl text-ink/70">We teamed up with Deyga, the natural skincare brand, to host a feelings-first pause at their store, with honest conversations, self-care and goodies to take home.</p>
+        </div>
+        <div class="mt-10 grid gap-4 md:grid-cols-[3fr_2fr]">
+          <img src="images/deyga.webp" alt="Deyga team member and Indhuja with a Deyga gift" loading="lazy" class="aspect-[16/10] w-full rounded-[2rem] object-cover shadow-xl md:aspect-auto md:h-full" />
+          <img src="images/p17.webp" alt="The pause at the Deyga store" loading="lazy" class="aspect-[16/10] w-full rounded-[2rem] object-cover shadow-xl md:aspect-[4/5]" />
+        </div>
+
+        <h3 class="mt-16 text-center text-2xl font-bold sm:text-3xl">More <span class="text-brand">highlights</span></h3>
+        <div class="mt-8 grid gap-6 md:grid-cols-2">
+          <article class="overflow-hidden rounded-[2rem] bg-white shadow-xl">
+            <img src="images/police.webp" alt="Indhuja with the Assistant Commissioner of Police, Coimbatore" loading="lazy" class="aspect-[4/3] w-full object-cover object-top" />
+            <div class="p-6">
+              <span class="tag">recognition</span>
+              <h4 class="mt-3 text-xl font-bold">Recognised by the Assistant Commissioner of Police, Coimbatore</h4>
+              <p class="mt-2 text-sm text-ink/70">An honour that opens the door to our upcoming <span class="font-semibold text-brand">Tactical Pause</span>, a wellbeing session designed especially for Tamil Nadu Police.</p>
+            </div>
+          </article>
+          <article class="overflow-hidden rounded-[2rem] bg-white shadow-xl">
+            <img src="images/food.webp" alt="The Pause Kommune team serving food at an old age home" loading="lazy" class="aspect-[4/3] w-full object-cover" />
+            <div class="p-6">
+              <span class="tag">giving back</span>
+              <h4 class="mt-3 text-xl font-bold">Food donation for <span class="text-brand">35+</span> elders</h4>
+              <p class="mt-2 text-sm text-ink/70">We shared a meal and our time with 35+ members of an old age home in Coimbatore, because a pause is better when it's shared.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Outreach -->
+    <section class="mx-auto max-w-6xl px-4 py-16 md:py-20">
+      <span class="tag">outreach &amp; talks</span>
+      <h2 class="h2 mt-3">Taking the pause to classrooms &amp; teams.</h2>
+      <div id="talkList" class="mt-10 grid gap-5 sm:grid-cols-2"></div>
+    </section>
+
+    <!-- Offer -->
+    <section class="bg-brand text-white">
+      <div class="mx-auto max-w-6xl px-4 py-16">
+        <h2 class="h2">What we can do for you</h2>
+        <div class="mt-8 grid grid-cols-2 gap-4 md:grid-cols-4">
+          <div class="rounded-3xl bg-white/10 p-5"><p class="font-semibold">Wellness workshops</p><p class="mt-1 text-sm text-white/80">Open community sessions.</p></div>
+          <div class="rounded-3xl bg-white/10 p-5"><p class="font-semibold">Corporate wellbeing</p><p class="mt-1 text-sm text-white/80">Stress-relief sessions for teams.</p></div>
+          <div class="rounded-3xl bg-white/10 p-5"><p class="font-semibold">Campus talks</p><p class="mt-1 text-sm text-white/80">Schools, colleges and sports teams.</p></div>
+          <div class="rounded-3xl bg-white/10 p-5"><p class="font-semibold">Festive meetups</p><p class="mt-1 text-sm text-white/80">Celebrations with a feelings-first twist.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery -->
+    <section id="gallery" class="scroll-mt-16 mx-auto max-w-6xl px-4 py-16 md:py-20">
+      <span class="tag">gallery</span>
+      <h2 class="h2 mt-3">Moments from our pauses.</h2>
+      <div id="galleryGrid" class="mt-10 columns-2 gap-3 md:columns-3 lg:columns-4"></div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="scroll-mt-16 px-4 pb-16">
+      <div class="mx-auto max-w-4xl rounded-[2rem] bg-cream px-6 py-12 text-center sm:px-12">
+        <p class="font-hand text-2xl text-brand">psst… you deserve a break.</p>
+        <h2 class="h2 mt-2">Come pause with us.</h2>
+        <p class="mx-auto mt-3 max-w-md text-ink/70">Join our next event, or bring The Pause Kommune to your college, company or cafe.</p>
+        <div class="mt-8 flex flex-col justify-center gap-3 sm:flex-row">
+          <a href="https://www.instagram.com/the_pause_kommune/" target="_blank" rel="noopener" class="btn justify-center bg-brand text-white">Instagram</a>
+          <a href="https://wa.me/919003546115?text=Hi%20Pause%20Kommune!" target="_blank" rel="noopener" class="btn justify-center bg-white text-brand">WhatsApp</a>
+          <a href="mailto:thepausekommune@gmail.com" class="btn justify-center bg-white text-brand">Email us</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-cream py-8 text-center text-sm text-ink/60">
+    <p><span class="font-semibold text-ink">the pause <span class="text-brand">kommune</span></span> · it's ok to stop here</p>
+    <p class="mt-2 flex flex-wrap justify-center gap-x-4 gap-y-1"><a class="hover:text-brand" href="https://www.instagram.com/the_pause_kommune/" target="_blank" rel="noopener">@the_pause_kommune</a><a class="hover:text-brand" href="tel:+919003546115">+91 90035 46115</a><a class="hover:text-brand" href="mailto:thepausekommune@gmail.com">thepausekommune@gmail.com</a></p>
+    <p class="mt-1">© 2026 · Coimbatore</p>
+  </footer>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="fixed inset-0 z-50 hidden items-center justify-center bg-ink/90 p-4" role="dialog" aria-modal="true">
+    <button class="absolute right-4 top-4 text-3xl text-white" aria-label="Close">×</button>
+    <img alt="" class="max-h-[85vh] max-w-full rounded-2xl" />
+  </div>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
